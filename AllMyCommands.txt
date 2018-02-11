@@ -1,0 +1,17 @@
+git init
+git add ./1.1\ Getting\ Started\ -\ About\ Version\ Control.txt 
+git add ./3.1\ Git\ Branching\ -\ Branches\ in\ a\ Nutshell.txt
+git add ./5.1\ Distributed\ Git\ -\ Distributed\ Workflows.txt
+rm -f ./3.1\ Git\ Branching\ -\ Branches\ in\ a\ Nutshell.txt
+git checkout 3.1\ Git\ Branching\ -\ Branches\ in\ a\ Nutshell.txt
+git commit -m "chapters 1.1 - 3.1 - 5.1"
+git remote add origin git@github.com:ahmedadel2214/SECoursse.git
+git push -u origin master
+touch README.md
+git branch ReadMe
+git checkout ReadMe
+git add ./README.md
+git commit -m "Added README.md File"
+git checkout master
+git merge ReadMe
+
