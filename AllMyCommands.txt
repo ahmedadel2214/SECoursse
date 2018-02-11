@@ -14,4 +14,5 @@ git add ./README.md
 git commit -m "Added README.md File"
 git checkout master
 git merge ReadMe
-
+git add ./AllMyCommands.txt 
+git commit -m "Added AllMyCommands.txt File"
